@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Portfolio - Gabriel Lima</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Portfolio - Gabriel Lima">
+	<meta name="keywords" content="portfolio, gabriel, front-end, developer, web">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon" />
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+
+</head>
+
+<body>
+	<!-- Modal - Imagem -->
+	<div style="z-index: 999999 !important" id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img01">
+		<div id="caption"></div>
+	</div>
+
+	<!-- Loading -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header -->
+	<!-- <header class="header-section">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-lg-12 col-md-9">
+					<nav class="main-menu">
+						<ul>
+							<li><a href="index.html">Página Inicial</a></li>
+							<li><a href="contact.html">Contatos</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="nav-switch">
+			<i class="fa fa-bars"></i>
+		</div>
+	</header> -->
+
+	<!-- Tíulo Home  -->
+	<section class="intro-section">
+		<div class="container text-center">
+			<div class="row justify-content-center">
+				<div class="col-xl-10">
+					<h2 class="section-title">Gabriel Lima<br>
+						<span class="section-title-span">Front-end web developer</span>
+
+						<div class="social-links">
+							<!-- <a href=""><span class="fa fa-pinterest"></span></a> -->
+							<!-- <a href=""><span class="fa fa-linkedin"></span></a> -->
+							<a target="_blank" href="https://github.com/gabriel1lima"><span class="fa fa-github"></span></a>
+							<a target="_blank" href="https://www.instagram.com/gabriel.lima.rds"><span class="fa fa-instagram"></span></a>
+							<a target="_blank" href="https://www.facebook.com/gabriel.lima.6"><span class="fa fa-facebook"></span></a>
+							<a target="_blank" href="https://twitter.com/Gabriel_Lima56"><span class="fa fa-twitter"></span></a>
+							<a target="_blank" href="mailto:gabriel.lima.rds@gmail.com" data-toggle="tooltip" data-placement="top" title="gabriel.lima.rds@gmail.com"><span class="fa fa-envelope"></span></a>
+							<a href="" data-toggle="tooltip" data-placement="top" title="+55 88 99779-5069"><span class="fa fa-whatsapp"></span></a>
+						</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Portfolio -->
+	<section class="portfolio-section">
+		<div class="container text-center">
+			<ul class="portfolio-filter controls text-center">
+				<li class="control" data-filter="all">Todos</li>
+				<li class="control" data-filter=".django">Django</li>
+				<li class="control" data-filter=".reactjs">ReactJS</li>
+				<li class="control" data-filter=".rn">React Native</li>
+				<li class="control" data-filter=".vuejs">Vue.js</li>
+				<li class="control" data-filter=".laravel">Laravel</li>
+				<li class="control" data-filter=".wordpress">Wordpress</li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="row portfolios-area">
+				<div class="mix col-lg-9 mb-4 django">
+					<div class="card shadow-item">
+						<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item img-carousel active hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/django/hotel/1.png"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/django/hotel/2.png"
+									 alt="">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+								<img style="width: 22px; height: 22px;" src="imgs/left-arrow.svg" alt="">
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+								<img style="width: 22px; height: 22px;" src="imgs/right-arrow.svg" alt="">
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+
+						<div class="card-body border-top">
+							<img style="width: 40px" src="https://cdn-images-1.medium.com/max/2000/1*HVKOLLX7wprRbHTl2IPDcQ.png">
+							<span class="align-middle legend">Django</span>
+
+						</div>
+					</div>
+				</div>
+				<div class="mix col-lg-3 mb-4 rn">
+
+					<div class="card shadow-item">
+						<div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+								<li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+								<li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
+								<li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item img-carousel active hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactnative/dimenu/1.jpg"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactnative/dimenu/2.jpg"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactnative/dimenu/3.jpg"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactnative/dimenu/4.jpg"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactnative/dimenu/5.jpg"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactnative/dimenu/6.jpg"
+									 alt="">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+								<img style="width: 22px; height: 22px;" src="imgs/left-arrow.svg" alt="">
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+								<img style="width: 22px; height: 22px;" src="imgs/right-arrow.svg" alt="">
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+
+						<div class="card-body border-top">
+							<img style="width: 33px" src="https://cdn.iconscout.com/icon/free/png-256/react-2-458175.png">
+							<span class="align-middle legend">React Native</span>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-lg-5 mb-4 reactjs">
+
+					<div class="card shadow-item">
+						<div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item img-carousel active hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactjs/instaclone/1.png"
+									 alt="">
+								</div>
+							</div>
+						</div>
+
+
+						<div class="card-body border-top">
+							<img style="width: 33px" src="https://cdn0.froala.com/assets/editor/pages/B/frameworks/react-6a9ca3fcd0c84c07c1d8bbbad0eb7dfe.svg">
+							<span class="align-middle legend">ReactJS</span>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-lg-7 mb-4 django">
+					<div class="card shadow-item">
+						<div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+								<li data-target="#carouselExampleIndicators4" data-slide-to="3"></li>
+								<li data-target="#carouselExampleIndicators4" data-slide-to="4"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item img-carousel active hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/django/sgce/site/1.png"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/django/sgce/site/2.png"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/django/sgce/site/3.png"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/django/sgce/dashboard/1.png"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/django/sgce/dashboard/2.png"
+									 alt="">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+								<img style="width: 22px; height: 22px;" src="imgs/left-arrow.svg" alt="">
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+								<img style="width: 22px; height: 22px;" src="imgs/right-arrow.svg" alt="">
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+
+						<div class="card-body border-top">
+							<img style="width: 40px" src="https://cdn-images-1.medium.com/max/2000/1*HVKOLLX7wprRbHTl2IPDcQ.png">
+							<span class="align-middle legend">Django</span>
+
+						</div>
+					</div>
+				</div>
+				<div class="mix col-lg-3 mb-4 rn">
+					<div class="card shadow-item">
+						<div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item img-carousel active hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactnative/tcc/1.jpg"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactnative/tcc/2.jpg"
+									 alt="">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+								<img style="width: 22px; height: 22px;" src="imgs/left-arrow.svg" alt="">
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+								<img style="width: 22px; height: 22px;" src="imgs/right-arrow.svg" alt="">
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+
+						<div class="card-body border-top">
+							<img style="width: 33px" src="https://cdn.iconscout.com/icon/free/png-256/react-2-458175.png">
+							<span class="align-middle legend">React Native</span>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-lg-3 mb-4 rn">
+					<div class="card shadow-item">
+						<div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators6" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item img-carousel active hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactnative/twitter/1.jpg"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactnative/twitter/2.jpg"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactnative/twitter/3.jpg"
+									 alt="">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
+								<img style="width: 22px; height: 22px;" src="imgs/left-arrow.svg" alt="">
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
+								<img style="width: 22px; height: 22px;" src="imgs/right-arrow.svg" alt="">
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+
+						<div class="card-body border-top">
+							<img style="width: 33px" src="https://cdn.iconscout.com/icon/free/png-256/react-2-458175.png">
+							<span class="align-middle legend">React Native</span>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-lg-3 mb-4 rn">
+					<div class="card shadow-item">
+						<div id="carouselExampleIndicators7" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators7" data-slide-to="0" class="active"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item img-carousel active hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactnative/todo/1.jpg"
+									 alt="">
+								</div>
+							</div>
+						</div>
+
+
+						<div class="card-body border-top">
+							<img style="width: 33px" src="https://cdn.iconscout.com/icon/free/png-256/react-2-458175.png">
+							<span class="align-middle legend">React Native</span>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-lg-3 mb-4 rn">
+					<div class="card shadow-item">
+						<div id="carouselExampleIndicators8" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators8" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators8" data-slide-to="1"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item img-carousel active hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactnative/outros/1.jpg"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactnative/outros/2.jpg"
+									 alt="">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators8" role="button" data-slide="prev">
+								<img style="width: 22px; height: 22px;" src="imgs/left-arrow.svg" alt="">
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators8" role="button" data-slide="next">
+								<img style="width: 22px; height: 22px;" src="imgs/right-arrow.svg" alt="">
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+
+						<div class="card-body border-top">
+							<img style="width: 33px" src="https://cdn.iconscout.com/icon/free/png-256/react-2-458175.png">
+							<span class="align-middle legend">React Native</span>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-lg-7 mb-4 wordpress">
+					<div class="card shadow-item">
+						<div id="carouselExampleIndicators9" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators9" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators9" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators9" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item img-carousel active hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/wordpress/1.png"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/wordpress/2.png"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/wordpress/3.png"
+									 alt="">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators9" role="button" data-slide="prev">
+								<img style="width: 22px; height: 22px;" src="imgs/left-arrow.svg" alt="">
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators9" role="button" data-slide="next">
+								<img style="width: 22px; height: 22px;" src="imgs/right-arrow.svg" alt="">
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+
+						<div class="card-body border-top">
+							<img style="width: 30px" src="https://fmsurf.com.br/wp-content/uploads/2016/05/favicon.png">
+							<span class="align-middle legend">Wordpress</span>
+
+						</div>
+					</div>
+				</div>
+				<div class="mix col-lg-5 mb-4 reactjs">
+
+					<div class="card shadow-item">
+						<div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators10" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators10" data-slide-to="1"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item img-carousel active hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactjs/twitter/1.png"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactjs/twitter/2.png"
+									 alt="">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators10" role="button" data-slide="prev">
+								<img style="width: 22px; height: 22px;" src="imgs/left-arrow.svg" alt="">
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators10" role="button" data-slide="next">
+								<img style="width: 22px; height: 22px;" src="imgs/right-arrow.svg" alt="">
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+
+						<div class="card-body border-top">
+							<img style="width: 33px" src="https://cdn0.froala.com/assets/editor/pages/B/frameworks/react-6a9ca3fcd0c84c07c1d8bbbad0eb7dfe.svg">
+							<span class="align-middle legend">ReactJS</span>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-lg-9 mb-4 laravel">
+					<div class="card shadow-item">
+						<div id="carouselExampleIndicators11" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators11" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators11" data-slide-to="1"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item img-carousel active hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/laravel/npj/1.png"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/laravel/npj/2.png"
+									 alt="">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators11" role="button" data-slide="prev">
+								<img style="width: 22px; height: 22px;" src="imgs/left-arrow.svg" alt="">
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators11" role="button" data-slide="next">
+								<img style="width: 22px; height: 22px;" src="imgs/right-arrow.svg" alt="">
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+
+						<div class="card-body border-top">
+							<img style="width: 33px" src="https://upload.wikimedia.org/wikipedia/commons/3/3d/LaravelLogo.png">
+							<span class="align-middle legend">Laravel</span>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-lg-3 mb-4 rn">
+					<div class="card shadow-item">
+						<div id="carouselExampleIndicators12" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators12" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators12" data-slide-to="1"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item img-carousel active hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactnative/people/1.png"
+									 alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactnative/people/2.png"
+									 alt="">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators12" role="button" data-slide="prev">
+								<img style="width: 22px; height: 22px;" src="imgs/left-arrow.svg" alt="">
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators12" role="button" data-slide="next">
+								<img style="width: 22px; height: 22px;" src="imgs/right-arrow.svg" alt="">
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+
+						<div class="card-body border-top">
+							<img style="width: 33px" src="https://cdn.iconscout.com/icon/free/png-256/react-2-458175.png">
+							<span class="align-middle legend">React Native</span>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-lg-5 mb-5 reactjs">
+					<div class="card shadow-item">
+						<div id="carouselExampleIndicators13" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators13" data-slide-to="0" class="active"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item img-carousel active hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/reactjs/todo/1.png"
+									 alt="">
+								</div>
+							</div>
+						</div>
+
+
+						<div class="card-body border-top">
+							<img style="width: 33px" src="https://cdn0.froala.com/assets/editor/pages/B/frameworks/react-6a9ca3fcd0c84c07c1d8bbbad0eb7dfe.svg">
+							<span class="align-middle legend">ReactJS</span>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-lg-7 mb-5 vuejs">
+					<div class="card shadow-item">
+						<div id="carouselExampleIndicators14" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators14" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators14" data-slide-to="1"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item img-carousel active hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/vuejs/galeria/1.png" alt="">
+								</div>
+								<div class="carousel-item img-carousel hover01">
+									<img id="myImg" onclick="clickImg(this)" style="width: 100%;" class="d-block w-100" src="imgs/vuejs/galeria/2.png" alt="">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators14" role="button" data-slide="prev">
+								<img style="width: 22px; height: 22px;" src="imgs/left-arrow.svg" alt="">
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators14" role="button" data-slide="next">
+								<img style="width: 22px; height: 22px;" src="imgs/right-arrow.svg" alt="">
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+
+						<div class="card-body border-top">
+							<img style="width: 30px" src="http://www.stickpng.com/assets/images/58482acecef1014c0b5e4a1e.png">
+							<span class="align-middle legend">Vue.js</span>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Rodapé -->
+	<footer class="footer-section text-center">
+		<div class="container">
+			<hr>
+			<div class="copyright">
+				Desenvolvido por mim mesmo!
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$('.carousel').carousel({
+			pause: true,
+			interval: false
+		});
+		$(document).keydown(function (event) {
+			if (event.keyCode == 27) {
+				$('#myModal').hide();
+			}
+		});
+	</script>
+</body>
+
+</html>
