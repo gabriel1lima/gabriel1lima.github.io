@@ -1,14 +1,3 @@
-/* =================================
-------------------------------------
-  Riddle - Portfolio
-  Version: 1.0
- ------------------------------------ 
- ====================================*/
-
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
-
 html,
 body {
   height: 100%;
@@ -56,9 +45,6 @@ ol {
   margin: 0;
 }
 
-/*------------------------
-  Helper css
---------------------------*/
 .body-pad {
   padding: 0 40px;
 }
@@ -85,9 +71,6 @@ ol {
   font-size: 40px;
 }
 
-/*------------------------
-  Common Elements
---------------------------*/
 .element {
   margin-bottom: 100px;
 }
@@ -96,7 +79,6 @@ ol {
   margin-bottom: 0;
 }
 
-/*=== Preloder ===*/
 #preloder {
   position: fixed;
   width: 100%;
@@ -153,7 +135,6 @@ ol {
   }
 }
 
-/*=== Buttons ===*/
 .site-btn {
   display: inline-block;
   font-size: 14px;
@@ -198,7 +179,6 @@ ol {
   color: #fff;
 }
 
-/*===  Accordion  ===*/
 .accordion-area .panel {
   margin-bottom: 30px;
 }
@@ -266,7 +246,6 @@ ol {
   margin-left: -4px;
 }
 
-/*===  Tab  ===*/
 .tab-element .nav-tabs {
   border-bottom: none;
   margin-bottom: 35px;
@@ -332,7 +311,6 @@ ol {
   line-height: normal;
 }
 
-/*===  Icon Box  ===*/
 .icon-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,9 +331,6 @@ ol {
   margin-bottom: 25px;
 }
 
-/*------------------------
-    Header Section
---------------------------*/
 .header-section {
   padding-top: 30px;
   padding-bottom: 20px;
@@ -393,16 +368,10 @@ ol {
   display: none;
 }
 
-/*------------------------
-    Intro Section
---------------------------*/
 .intro-section {
   padding-top: 110px;
 }
 
-/*------------------------
-    Portfolio Section
---------------------------*/
 .portfolio-section {
   overflow: hidden;
 }
@@ -528,9 +497,6 @@ ol {
   transform: scale(1);
 }
 
-/*------------------------
-    Footer Section
---------------------------*/
 .footer-section {
   padding-bottom: 50px;
   padding-top: 80px;
@@ -556,9 +522,6 @@ ol {
   margin-right: 0;
 }
 
-/*------------------------
-    About Page
---------------------------*/
 .pic-frame {
   position: relative;
   padding-left: 25px;
@@ -590,9 +553,6 @@ ol {
   color: #979797;
 }
 
-/*------------------------
-    Blog Page
---------------------------*/
 .blog-item {
   margin-bottom: 70px;
 }
@@ -635,9 +595,6 @@ ol {
   margin-bottom: 30px;
 }
 
-/*------------------------
-    Contact Page
---------------------------*/
 .contect-tect {
   text-align: center;
   margin-bottom: 70px;
@@ -693,9 +650,6 @@ ol {
   font-style: italic;
 }
 
-/* ===========================
-  Responsive
-==============================*/
 @media only screen and (max-width: 1448px) {
   .home-2.container {
     width: auto;
@@ -803,31 +757,20 @@ ol {
   opacity: 0.7;
 }
 
-/* The Modal (background) */
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   padding-top: 100px;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */
 }
 
-/* Modal Content (Image) */
 .modal-content1 {
   margin: auto;
   display: block;
@@ -840,7 +783,6 @@ ol {
   width: 25%;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
   margin: auto;
   display: block;
@@ -851,7 +793,6 @@ ol {
   height: 150px;
 }
 
-/* Add Animation - Zoom in the Modal */
 .modal-content,
 #caption {
   animation-name: zoom;
@@ -868,7 +809,6 @@ ol {
   }
 }
 
-/* The Close Button */
 .close {
   position: absolute;
   top: 15px;
@@ -886,7 +826,6 @@ ol {
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
@@ -916,7 +855,6 @@ ol {
   transition: .5s ease;
   background: rgba(0, 20, 24, 0.8);
 }
-
 
 .container-img:hover .overlay {
   opacity: 1;
